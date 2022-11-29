@@ -1,10 +1,15 @@
 //Global Variables
+int appWidth, appHeight;
 //
 void setup() {
-  size (800,800);
+  size (600,400);
+  displayOrientation();
+  appWidth=width;
+  appHeight=height;
+  
   //Display & Orientation
   //Population
-  //Theme: i.e. Face
+  //Theme: i.e. Face (Will work in portrait and landscape)
   //Background Image (could be in draw too)
 }//End setup
 //

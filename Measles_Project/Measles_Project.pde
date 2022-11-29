@@ -12,6 +12,10 @@ void setup() {
   population();
   //Theme: i.e. Face (Will work in portrait and landscape)
   faceSetup();
+  eyes();
+  nose();
+  mouth();
+  measles();
   //Background Image (could be in draw too)
 }//End setup
 //

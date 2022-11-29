@@ -9,7 +9,9 @@ void setup() {
   
   //Display & Orientation
   //Population
+  population();
   //Theme: i.e. Face (Will work in portrait and landscape)
+  faceSetup();
   //Background Image (could be in draw too)
 }//End setup
 //

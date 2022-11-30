@@ -1,11 +1,11 @@
-float rectfaceX, rectfaceY, rectfaceWidth, rectfaceHeight;
+float rectFaceX, rectFaceY, rectFaceWidth, rectFaceHeight;
 float faceX, faceY, faceDiameter;
-
-
-void faceSetup(){
-//Face: Circle, inscribing a circle in a square(i.e. logical rectangle)
-rect(rectfaceX, rectfaceY, rectfaceWidth, rectfaceHeight);
-circle(faceX, faceY, faceDiameter);
+//
+void faceSetup () {
+  //Face: circle, inscribing a circle in a square (i.e. logical rectangle)
+  //start from center of display
+  rect(rectFaceX, rectFaceY, rectFaceWidth, rectFaceHeight);
+  ellipse(faceX, faceY, faceDiameter, faceDiameter);
 } //End faceSetup
 //
 //End Face Subprogram

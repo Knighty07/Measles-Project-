@@ -1,5 +1,7 @@
 //Global Variables
 int appWidth, appHeight;
+int reset =1;
+boolean nightMode=false;
 //
 void setup() {
   size (800,600);
@@ -10,6 +12,8 @@ void setup() {
   //Display & Orientation
   //Population
   population();
+   face();
+
   //Theme: i.e. Face (Will work in portrait and landscape)
  
   //Background Image (could be in draw too)
@@ -26,8 +30,16 @@ void draw() {
   nose();
 }//End draw
 //
-void keyPressed() {
-  //KeyBoard Shortcuts
+void keyPressed(){
+  
+ //KeyBoard Shortcuts
+  if ( key=='N' | key=='n' ) { 
+    if ( nightMode==false ) {
+     nightMode=true;
+  } else {
+      nightMode=false;
+    }
+  }
 }//End keyPressed
 //
 void mousePressed() {

@@ -2,9 +2,11 @@
 int appWidth, appHeight;
 int reset =1;
 boolean nightMode=false;
+
+
 //
 void setup() {
-  size (800,600);
+  size (800, 600);
   displayOrientation();
   appWidth=width;
   appHeight=height;
@@ -12,15 +14,17 @@ void setup() {
   //Display & Orientation
   //Population
   population();
-   face();
-
+  face();
+  textSize(40);
+  fill(0, 408, 612, 204);
+  text("Hit 'esc' Before it's too lat-!", 200, 45);
   //Theme: i.e. Face (Will work in portrait and landscape)
- 
+
   //Background Image (could be in draw too)
 }//End setup
 //
 void draw() {
-//  circle () ;
+  //  circle () ;
   //OS System Button
   //Start Button | Measles Reset Button
   //Theme: measles with different sizes and colors
@@ -30,15 +34,17 @@ void draw() {
   nose();
 }//End draw
 //
-void keyPressed(){
-  
- //KeyBoard Shortcuts
+void keyPressed() {
+
+  //KeyBoard Shortcuts
   if ( key=='N' | key=='n' ) { 
     if ( nightMode==false ) {
-     nightMode=true;
-  } else {
+      nightMode=true;
+    } else {
       nightMode=false;
     }
+
+    if (key==CODED && keyCode== ESC) exit();
   }
 }//End keyPressed
 //

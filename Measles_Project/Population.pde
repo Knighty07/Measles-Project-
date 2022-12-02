@@ -22,7 +22,7 @@ void population() {
   noseY1 = appWidth *1/3;
   noseY2 = appHeight * 1.75/3;
   noseY3 = appHeight * 1.75/4; 
-  
+
   //
   //
 } //End population

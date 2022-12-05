@@ -37,14 +37,11 @@ void draw() {
 void keyPressed() {
 
   //KeyBoard Shortcuts
-  if ( key=='N' | key=='n' ) { 
-  if ( nightMode==false ) {
-   nightMode=true;
-    } else {
-   nightMode=false;
-    }
+  if ( key=='N' | key=='n' ) {  if ( nightMode==false ) {  nightMode=true;  } else { nightMode=false;   }
 
     if (key==CODED && keyCode== ESC) exit();
+       if ( key=='A' | key=='a' ) ;
+
   }
 }//End keyPressed
 //

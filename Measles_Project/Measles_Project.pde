@@ -2,7 +2,7 @@
 int appWidth, appHeight;
 int reset =1;
 boolean nightMode=false;
-
+PImage img, pic;
 
 //
 void setup() {
@@ -38,10 +38,10 @@ void keyPressed() {
 
   //KeyBoard Shortcuts
   if ( key=='N' | key=='n' ) { 
-    if ( nightMode==false ) {
-      nightMode=true;
+  if ( nightMode==false ) {
+   nightMode=true;
     } else {
-      nightMode=false;
+   nightMode=false;
     }
 
     if (key==CODED && keyCode== ESC) exit();

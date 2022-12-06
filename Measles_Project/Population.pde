@@ -29,6 +29,7 @@ void population() {
   int picWidth =331;
   int picHeight =233;
  pic = loadImage("duckwithknifelol.PNG");
+
   //
   //
 } //End population
